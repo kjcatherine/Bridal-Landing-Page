@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--------font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--------viewport settings-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="project1.css" type="text/css" />
+
+    <title>bridalshowersng.com</title>
+    <!-------google font link--------------------->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Noto+Serif:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />-->
+  </head>
+
+  <body id="Home">
+    <!-------------------navigation, logo, search---------------------------------->
+    <section class="header">
+      <nav>
+        <a href="#default"
+          ><img
+            id="logo"
+            src="images2/Logo Horizontal dark BG.png"
+            width="150px"
+            alt="logo"
+        /></a>
+
+        <!-------x icon comes immediately after navlinks div and just before the links (a) so it can be on top of the zindex-------->
+        <div class="navlinks" id="navLinks">
+          <i class="fa fa-times" id="times2" onclick="hideMenu()"></i>
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Services">Services</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <!----------bar icons comes after the navlink divs and just before closing <nav>-------------->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!--------------headers texts and button----------------->
+      <div class="headtext">
+        <h1 id="h1text">BRIDAL SHOWERS NG</h1>
+        <p>...a bride to be's holy grail.</p>
+        <a href="#Signup" class="btn">Sign Up</a>
+      </div>
+    </section>
+<!------------------services section------------------------------->
+    <section class="services" id="Services">
+      <h1>Our Services</h1>
+      <div class="row">
+        <div class="service-col">
+          <img src="images2/IMG_9348.PNG" width="300px" />
+          <p>
+            We curate bridal shower ideas and inspiration for intending brides.
+          </p>
+        </div>
+        <div class="service-col">
+          <img src="images2/IMG_9342.PNG" width="300px" />
+          <p>We feature bridal showers, hen nights and bachelorettes.</p>
+        </div>
+        <div class="service-col">
+          <img src="images2/IMG_9346.PNG" width="350px" />
+          <p>We advertise bridal businesses</p>
+        </div>
+      </div>
+    </section>
+<!--------------about section----------------------------------->
+    <section class="about" id="About">
+      <h1>About Us</h1>
+      <div class="row2">
+        <div class="about-col">
+          <img src="images2/IMG_9352.PNG" />
+        </div>
+        <div class="about-col">
+          <p>
+            Bridal showers Ng curates bridal shower, hen night and bachelorette
+            ideas, inspiration and features in Africa. We have a community of
+            over 70 thousand dedicated followers on our instagram platform. We
+            have built a space for all intending brides and brides of friend to
+            choose from hundreds of bachelorettes ideas and inspiration to ease
+            planning. This is also a place for them to find legit bridal
+            vendors.
+          </p>
+        </div>
+      </div>
+    </section>
+<!---------contacts section--------------->
+    <section class="contact" id="Contact">
+      <div class="last-cont">
+      <form class="forms">
+        <div class="row3">
+          <div class="contform">
+            <p>Contact Us</p>
+            <div class="form-align">
+            <input type="text" placeholder="Name" id="text" />
+          </div>
+        </div>
+        <div class="row3">
+          <div class="contform">
+            <input type="text" placeholder="Email"  id="text"/>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="contform">
+            <input type="number" placeholder="Phone Number" />
+          </div>
+        </div>
+        <div class="row3">
+          <div class="contform">
+            <input type="text" placeholder="Subject" id="text" />
+          </div>
+        </div>
+        <div class="row3">
+          <div class="contform">
+            <textarea 
+              id="feedback"
+              name="feedback"
+              placeholder="Write something..."
+              style="height: 50px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row3">
+          <input type="submit" value="submit" />
+          </div>
+        </div>
+      </form>
+      <div class="lastcont">
+      <form>
+        <div class="row3">
+          <div class="contform" id="searchbar">
+            <input type="search" placeholder="Enter your search...">
+            <input type="button" value="search"/>
+          </div>
+          <div class="row3" id="row3">
+          <div class="contform">
+            <h2>Login</h2>
+          </div>
+          <div class="contform">
+            <input type="text" placeholder="Username/Email" />
+          </div>
+          <div class="contform">
+            <input type="password" placeholder="password" />
+          </div>
+          <div class="contform">
+            <input type="button" id="login-btn" value="Login" />
+          </div>
+        </div>
+      </form>
+      </div>
+    </section>
+<!---------------footer section----------------------------->
+    <section class="footer" id="Contact">
+      <footer>
+        <div class="row4">
+          <div class="contain-foot">
+        <p>&copy; Created for 
+        <a href="#" target="_blank"><em> bridalshowersng</em><i class="fa fa-2x fa-fire"></i
+        ></a>
+      </p>
+      </div>
+        <div class="footer-icons">
+        <a href=""><i class="fa fa-2x fa-twitter"></i></a>
+        <a href=""><i class="fa fa-2x fa-linkedin"></i></a>
+        <a href=""><i class="fa fa-2x fa-envelope"></i></a>
+        <a href=""><i class="fa fa-2x fa-phone"></i></a>
+        <a href=""><i class="fa fa-2x fa-facebook"></i></a>
+        <!--<li><i class="fa fa-2x fa-instagram-square"></i></li>-->
+    
+      </div>
+      </div>
+      </footer>
+    </section>
+    <!--javascript to make bar open links and x close it---we needed to assign an id="navLinks" inside navlinks div----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
